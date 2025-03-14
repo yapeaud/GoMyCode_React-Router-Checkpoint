@@ -1,25 +1,21 @@
-// eslint-disable-next-line
-import React, { useState } from "react";
-import MovieList from "./MovieList";
-import Filter from "./Filter";
+// export default Home;
+import React from 'react';
+import MovieCard from './MovieCard';
 
-const Home = ({ movies }) => {
-    const [filter, setFilter] = useState({ title: "", rating: 0 });
-
-    const filteredMovies = movies.filter(
-        (movie) =>
-            movie.title.toLowerCase().includes(filter.title.toLowerCase()) &&
-            movie.rating >= filter.rating
-    );
-
+const MovieList = ({ movies }) => {
     return (
         <>
-            <section className="container p-4">
-                <Filter setFilter={setFilter} />
-                <MovieList movies={filteredMovies} />
+            <section>
+                <article className="row">
+                    {movies.map((movie) => (
+                        <div key={movie.id} className="col-md-4 mb-4">
+                            <MovieCard movie={movie} />
+                        </div>
+                    ))}
+                </article>
             </section>
         </>
     );
 };
 
-export default Home;
+export default MovieList;
