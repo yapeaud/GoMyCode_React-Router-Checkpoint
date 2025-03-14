@@ -7,9 +7,9 @@ import AddMovie from "./AddMovie";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const moviesData = [
-    { id: 1, title: "Inception", description: "Un thriller hallucinant", posterURL: "", rating: 4.7, trailerURL: "https://www.youtube.com/embed/YoHD9XEInc0" },
-    { id: 2, title: "Titanic", description: "Un drame romantique", posterURL: "", rating: 4.7, trailerURL: "https://www.youtube.com/embed/kVrqfYjkTdQ" },
-    { id: 3, title: "The Dark Knight", description: "Batman affronte le Joker", posterURL: "", rating: 4.9, trailerURL: "https://www.youtube.com/embed/EXeTwQWrcwY" },
+    { id: 1, title: "Inception", description: "Un thriller hallucinant", posterURL: "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/72/34/14/19476654.jpg", rating: 4.7, trailerURL: "https://www.youtube.com/embed/YoHD9XEInc0" },
+    { id: 2, title: "Titanic", description: "Un drame romantique", posterURL: "https://img-4.linternaute.com/VaoEs4mniypIrjZGGdFOtZVAf20=/405x540/c6bfd8570c3a4cdf8983a07bc8c67bb0/ccmcms-linternaute/135211.jpg", rating: 4.7, trailerURL: "https://www.youtube.com/embed/kVrqfYjkTdQ" },
+    { id: 3, title: "The Dark Knight", description: "Batman affronte le Joker", posterURL: "https://medias.boutique.lab.arte.tv/prod/69209_vod_thumb_315491.jpg", rating: 4.9, trailerURL: "https://www.youtube.com/embed/EXeTwQWrcwY" },
 ];
 
 const App = () => {
