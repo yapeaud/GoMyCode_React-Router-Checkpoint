@@ -11,7 +11,7 @@ const Description = ({ movies }) => {
 
     return (
         <>
-            <div className="container mt-5">
+            <section className="container mt-5">
                 <h1>{movie.title}</h1>
                 <p>{movie.description}</p>
                 <iframe
@@ -23,7 +23,8 @@ const Description = ({ movies }) => {
                 ></iframe>
                 <br />
                 <Link to="/" className="btn btn-secondary mt-3">Retour à l'accueil</Link>
-            </div></>
+            </section>
+        </>
     );
 };
 
