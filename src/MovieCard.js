@@ -6,7 +6,7 @@ const MovieCard = ({ movie }) => {
         <>
             <section className="border p-4 rounded shadow container">
                 <article className="row">
-                    <div className="col-12 col-md-6 col-lg-4">
+                    <div className="col-12 col-md-6 col-xd-4">
                         <img
                             src={movie.posterURL}
                             alt={movie.title}
