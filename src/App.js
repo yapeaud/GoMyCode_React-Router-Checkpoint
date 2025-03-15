@@ -26,7 +26,7 @@ const App = () => {
 
     return (
         <Router>
-            <div className="container p-5">
+            <section className="container p-5">
                 <h1 className="display-4 mb-4">Movie App</h1>
                 <Routes>
                     <Route
@@ -41,7 +41,7 @@ const App = () => {
                     />
                     <Route path="/movie/:id" element={<Description movies={movies} />} />
                 </Routes>
-            </div>
+            </section>
         </Router>
     );
 };
